@@ -28,7 +28,7 @@ This project simulates a real-world environment by following SOLID principles, a
 
 ## 🧩 Tech Stack
 
-- **.NET 8 Web API**
+- **.Net 9 Web API**
 - **Entity Framework Core**
 - **PostgreSQL** (with or without Docker)
 - **ASP.NET Core Identity**
