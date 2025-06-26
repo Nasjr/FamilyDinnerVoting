@@ -1,7 +1,7 @@
 # ========================
 # STAGE 1: Build the app
 # ========================
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 
 WORKDIR /app
 
@@ -19,7 +19,7 @@ RUN dotnet publish ./FamilyDinnerVotingAPI/FamilyDinnerVotingAPI.csproj -c Relea
 # ================================
 # STAGE 2: Run the published app
 # ================================
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
+FROM mcr.microsoft.com/dotnet/aspnet:9.0
 
 WORKDIR /app
 COPY --from=build /app/publish .
